@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    font-family:'Open Sans', sans-serif;
+}
+.header-top{
+    width: 100%;
+    display: flex;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+}
+header nav{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header li{
+    margin-right: 10%;
+}
+header button{
+    height: 80px;
+    width: 80px;
+}
+#line-header{
+    border: 1px solid black;
+    background-color: black;
+    height: 5px;
+    margin-bottom: 5px;
+}
+#hamburger{
+    display: none;
+}
+header button{
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(68, 68, 68);
+    padding-right: 105px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    height: 100%;
+    margin-right: 2%;
+}
+span{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+                                        /* 1er Bloc d'élément du body dans la div "mountains" */
+.mountain{
+    background:url('mountain.jpg') no-repeat ;
+    padding-bottom: 30% ;
+}
+.mountain h1{
+    padding-top: 20%;
+    color: white;
+    font-size: 80px;
+    margin-left: 6%;
+}
+.mountain p{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+.mountain img{
+    width: 5%;
+    height: 5%;
+    margin-top: 18%;
+}
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+
+                                        /* 2ème bloc d'élément "produit" */
+.product{
+    background-color: rgb(58, 159, 63);
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: center;
+}
+.product h2{
+    font-size: 45px;
+}
+.left-block{
+    width: 45%;
+    margin-right: 2%;
+}
+.right-block{
+    width: 45%;
+    margin-left: 2%;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.description{
+    margin-top: 5%;
+    border: 1px solid black;
+    border-bottom: hidden;
+    border-left: hidden;
+    border-right: hidden;
+}
+.description span{
+    float: right;
+    color: black;
+    font-weight: 100;
+    font-size: medium;
+}
+.description p{
+    display: inline;
+}
+#rewards{
+    z-index: 2;
+    position: absolute;
+    max-width: 10%;
+    max-height: 20%;
+    left: 41%;
+    margin-top: -3%;
+    transform: rotate(23deg);
+}
+                                        /* éléments du footer  */
+footer{
+    background-color: rgb(76, 74, 95);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+footer h3{
+    color: white;
+    text-align: center;
+}
+                                        /* Mise en place du responsive pour Ipad */
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 720px) {
+                                        /* header */
+#hamburger{
+    display: block;
+    width: 8%;
+    height: 100%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+header nav{
+    display: none;
+}
+header button{
+    margin-left: 45%;
+    border-radius: 0px;
+}
+header{
+    padding-bottom: 1px;
+}
+
+
+
+                                        /* 1er bloc "mountainé */
+
+.mountain{
+    background:url('mountain.jpg') no-repeat center ;
+    background-size: contain;
+    padding-bottom: 217px;
+}
+.mountain p{
+    text-align: start;
+    margin-left: 2%;
+    font-size: 15px;
+    font-weight: 600;
+}
+#title{
+    justify-content: start;
+    margin-left: 2%;
+}
+#title h1{
+    margin-left: 0;
+    font-size: 50px;
+}
+#line-header{
+    margin-bottom: 0px;
+}
+
+                                        /* 2ème bloc d'élément "produit" */
+.product{
+    background-color: rgb(159, 66, 59);
+    flex-direction: column-reverse;
+}
+.product h2{
+    font-size: 35px;
+}
+.left-block{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    width: 80%;
+}
+.right-block{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.product img{
+    border-radius: 115px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.product span{
+    font-weight: bold;
+}
+.product p{
+    font-weight: bold;
+}
+#rewards{
+    display: none;
+}
+
+
+                                        /* footer */
+footer h3{
+    text-align: end;
+    margin-right: 5%;
+}
+
+}
